@@ -6,7 +6,7 @@
 
 https://vardaansinha.github.io/FastPages/
 
-# My Blog
+# My Blog Updated
 
 
 _powered by [fastpages](https://github.com/fastai/fastpages)_
