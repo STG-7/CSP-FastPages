@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      7 min read
     
 </span></p>
 
@@ -312,29 +312,6 @@ window.onload = wrap_img;
 <span class="nb">print</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">()</span>
-
-<span class="c1"># Printing out Average and Median Quarterback Height</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Average Quarterback Height"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'Height'</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Median Quarterback Height"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'Height'</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">()</span>
-
-<span class="c1"># Printing out Average and Median Quarterback Height</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Average Quarterback Weight"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'Weight'</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Median Quarterback Weight"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'Weight'</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">()</span>
-
-<span class="c1"># Printing out Tallest and Shortest Quarterbacks</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Tallest Quarterback"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">Height</span> <span class="o">==</span> <span class="n">df</span><span class="o">.</span><span class="n">Height</span><span class="o">.</span><span class="n">max</span><span class="p">()])</span>
-<span class="nb">print</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Shortest Quarterback"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">Height</span> <span class="o">==</span> <span class="n">df</span><span class="o">.</span><span class="n">Height</span><span class="o">.</span><span class="n">min</span><span class="p">()])</span>
 </pre></div>
 
     </div>
@@ -395,7 +372,150 @@ window.onload = wrap_img;
 
 
 
-Average Quarterback Height
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">'Height'</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="c1"># Prinitng out objects in terms of Weight (Ascending) </span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">'Weight'</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="c1"># Prinitng out objects in terms of QB Ranking (Ascending)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">'QB Ranking'</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>    Height  Weight  QB Ranking
+0       76     244           1
+2       76     229           3
+3       75     217           4
+4       75     231           5
+5       75     213           6
+10      74     224          11
+9       73     203          10
+11      73     207          12
+6       72     207           7
+7       72     207           8
+8       71     192           9
+1       70     214           2
+
+
+
+    Height  Weight  QB Ranking
+0       76     244           1
+4       75     231           5
+2       76     229           3
+10      74     224          11
+3       75     217           4
+1       70     214           2
+5       75     213           6
+6       72     207           7
+7       72     207           8
+11      73     207          12
+9       73     203          10
+8       71     192           9
+
+
+
+    Height  Weight  QB Ranking
+11      73     207          12
+10      74     224          11
+9       73     203          10
+8       71     192           9
+7       72     207           8
+6       72     207           7
+5       75     213           6
+4       75     231           5
+3       75     217           4
+2       76     229           3
+1       70     214           2
+0       76     244           1
+
+
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Average Quarterback Height"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'Height'</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Median Quarterback Height"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'Height'</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="c1"># Printing out Average and Median Quarterback Height</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Average Quarterback Weight"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'Weight'</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Median Quarterback Weight"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'Weight'</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="c1"># Printing out Tallest and Shortest Quarterbacks</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Tallest Quarterback"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">Height</span> <span class="o">==</span> <span class="n">df</span><span class="o">.</span><span class="n">Height</span><span class="o">.</span><span class="n">max</span><span class="p">()])</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Shortest Quarterback"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">Height</span> <span class="o">==</span> <span class="n">df</span><span class="o">.</span><span class="n">Height</span><span class="o">.</span><span class="n">min</span><span class="p">()])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Average Quarterback Height
 73.5
 
 Median Quarterback Height
