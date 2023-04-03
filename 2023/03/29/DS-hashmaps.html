@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      14 min read
+      15 min read
     
 </span></p>
 
@@ -134,7 +134,11 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Possible-Improvements-for-this-Code">Possible Improvements for this Code </a></li>
 <li class="toc-entry toc-h2"><a href="#Hacks">Hacks </a></li>
 <li class="toc-entry toc-h1"><a href="#Diagram-of-List-vs-Dictionary-Comparison">Diagram of List vs Dictionary Comparison </a></li>
-<li class="toc-entry toc-h1"><a href="#My-album-showing-features-of-a-python-dictionary">My album showing features of a python dictionary </a></li>
+<li class="toc-entry toc-h1"><a href="#My-album-showing-features-of-a-python-dictionary">My album showing features of a python dictionary </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Explanation-of-the-Code">Explanation of the Code </a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h1"><a href="#My-favorite-Taylor-Swift-Song---Look-What-You-Made-Me-Do">My favorite Taylor Swift Song - Look What You Made Me Do </a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#Basic-Overview">Basic Overview </a></li>
@@ -1008,6 +1012,57 @@ producer: ['Taylor Swift', 'Jack Antonoff', 'Joel Little', 'Taylor Swift', 'Loui
 <h1 id="My-album-showing-features-of-a-python-dictionary">
 <a class="anchor" href="#My-album-showing-features-of-a-python-dictionary" aria-hidden="true"><span class="octicon octicon-link"></span></a>My album showing features of a python dictionary<a class="anchor-link" href="#My-album-showing-features-of-a-python-dictionary"> </a>
 </h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">football_album</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"title"</span><span class="p">:</span> <span class="s2">"Gridiron Glory"</span><span class="p">,</span>
+    <span class="s2">"artist"</span><span class="p">:</span> <span class="s2">"The Touchdowns"</span><span class="p">,</span>
+    <span class="s2">"year"</span><span class="p">:</span> <span class="mi">2022</span><span class="p">,</span>
+    <span class="s2">"genre"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Rock"</span><span class="p">,</span> <span class="s2">"Country"</span><span class="p">,</span> <span class="s2">"Hip Hop"</span><span class="p">],</span>
+    <span class="s2">"tracks"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="mi">1</span><span class="p">:</span> <span class="s2">"Kickoff"</span><span class="p">,</span>
+        <span class="mi">2</span><span class="p">:</span> <span class="s2">"Huddle Up"</span><span class="p">,</span>
+        <span class="mi">3</span><span class="p">:</span> <span class="s2">"Run It In"</span><span class="p">,</span>
+        <span class="mi">4</span><span class="p">:</span> <span class="s2">"Passing Game (feat. QB1)"</span><span class="p">,</span>
+        <span class="mi">5</span><span class="p">:</span> <span class="s2">"Sack Attack"</span><span class="p">,</span>
+        <span class="mi">6</span><span class="p">:</span> <span class="s2">"Punt Return"</span><span class="p">,</span>
+        <span class="mi">7</span><span class="p">:</span> <span class="s2">"Two Minute Warning"</span><span class="p">,</span>
+        <span class="mi">8</span><span class="p">:</span> <span class="s2">"Halftime Show"</span><span class="p">,</span>
+        <span class="mi">9</span><span class="p">:</span> <span class="s2">"Fourth Down Conversion"</span><span class="p">,</span>
+        <span class="mi">10</span><span class="p">:</span> <span class="s2">"Touchdown Celebration"</span><span class="p">,</span>
+        <span class="mi">11</span><span class="p">:</span> <span class="s2">"Field Goal (feat. Special Teams)"</span><span class="p">,</span>
+        <span class="mi">12</span><span class="p">:</span> <span class="s2">"Challenge Flag"</span><span class="p">,</span>
+        <span class="mi">13</span><span class="p">:</span> <span class="s2">"Overtime Thriller"</span><span class="p">,</span>
+        <span class="mi">14</span><span class="p">:</span> <span class="s2">"Victory Formation"</span><span class="p">,</span>
+        <span class="mi">15</span><span class="p">:</span> <span class="s2">"Championship Parade"</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Explanation-of-the-Code">
+<a class="anchor" href="#Explanation-of-the-Code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Explanation of the Code<a class="anchor-link" href="#Explanation-of-the-Code"> </a>
+</h2>
+<p>In this example, we have an album titled "Gridiron Glory" by a band called "The Touchdowns". The album was released in 2022 and features a mix of rock, country, and hip hop genres. The tracks section lists out 15 different football-related songs, such as "Kickoff", "Sack Attack", and "Field Goal". Each song is numbered and has a corresponding title, with some featuring special guests like the starting quarterback ("Passing Game") or the special teams unit ("Field Goal").</p>
+<p>This dictionary could be used to store information about the album for display on a website, in a music player app, or for other purposes related to managing and organizing music data.</p>
+
 </div>
 </div>
 </div>
