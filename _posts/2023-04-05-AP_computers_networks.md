@@ -63,6 +63,14 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 
 - Complete True of False Questions
 
+**TRUE: Open standards and protocols enable different manufacturers and developers to build hardware and software that can communicate with hardware and software on the rest of the internet.**
+**FALSE: IETF is a task force used to enforce laws to keep manufacturers out of the internet.**
+**FALSE: Routes are determined in advance and are not flexible.**
+**TRUE: A protocol is an agreed-upon set of rules that specify the behavior of a system.**
+**FALSE: UDP guarantees transfers and is faster.**
+**FALSE: The World Wide Web is the internet.**
+**TRUE: HTTP is a protocol used by the World Wide Web.**
+
 - Essential Knowledge
     - The internet is a computer network consisting of interconnected networks that use standardized, open (nonproprierary) communication protocols.
     - Access to the internet depends on the ability to connect a computing device to an internet connected device.
@@ -114,6 +122,8 @@ The "network" layer is responsible for ***routing data packets between networks*
 > Watch both Daily videos for 4.2
 
 - Complete the network activity, summarize your understanding of fault tolerance.
+
+**The network operation was a very good practical method to analyze the networks of  certain  tens of lines and check their malfunction. Basically, fault tolerance means that in a network of many different sources and destinations, if one route goes down, there is still redundancy and the network can go from the  source to the destination. There is not only one path from A to B, so if that one path goes down,  A can take several paths to eventually reach B.**
 
 
 ### Parallel and Distributed Computing
