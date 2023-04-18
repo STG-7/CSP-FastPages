@@ -35,7 +35,7 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 - Inspect Variables
 
 
-![Computer Hardware]({{site.baseurl}}/images/cpu.jpeg)
+![Computer Hardware]({{site.baseurl}}/images/Picture11.png)
 
 
 ### The Internet
