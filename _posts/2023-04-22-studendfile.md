@@ -78,8 +78,8 @@ layout: notebook
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../assets/css/light-theme.css">
-    <link rel="stylesheet" href="../assets/css/dark-theme.css" id="theme-link">
+    <link rel="stylesheet" href="/assets/css/light-theme.css">
+    <link rel="stylesheet" href="/assets/css/dark-theme.css" id="theme-link">
 </head>
 <body>
     <button id="theme-toggle">Toggle Theme</button>
