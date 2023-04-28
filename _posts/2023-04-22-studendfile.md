@@ -6,7 +6,7 @@ badges: false
 layout: notebook
 ---
 
-### What are 5 Basic UI Elements?:
+## What are 5 Basic UI Elements?:
 
 **Color: The color UI element refers to the use of different colors in user interfaces to communicate information or enhance the visual appeal of a design. Color can be used to create contrast, hierarchy, and mood in a design, and can also be used to represent branding or identity.**
 
@@ -19,7 +19,7 @@ layout: notebook
 **Accessibility: The accessibility UI element refers to the design of user interfaces that are usable and understandable by people with disabilities or limitations. This can include considerations such as color contrast, text size, keyboard navigation, and screen reader compatibility, among others.**
 
 
-### In your own words, explain what SASS does:
+## In your own words, explain what SASS does:
 
 **SASS is a preprocessor for CSS that allows developers to write CSS more efficiently and with more advanced features. It adds functionality such as variables, nesting, mixins, and functions, making it easier to write and maintain complex stylesheets. Ultimately, SASS helps streamline the CSS development process and improve the organization and scalability of stylesheets.**
 
@@ -28,7 +28,7 @@ layout: notebook
 **SASS provides features like variables, nesting, and mixins, which increase efficiency and productivity in CSS development. It also allows for improved organization and scalability of stylesheets, code reusability, and better readability.**
 
 
-### Describe/Explain one of the more "advanced" SASS properties below in detail:
+## Describe/Explain one of the more "advanced" SASS properties below in detail:
 
 **One of the more advanced SASS properties is the @extend directive, which allows developers to share a set of CSS properties from one selector to another. The @extend directive is used to create a relationship between two selectors, where the second selector inherits all the properties of the first.**
 
@@ -67,10 +67,10 @@ layout: notebook
 ```
 **Using @extend instead of duplicating code reduces redundancy and improves maintainability of the stylesheet. It also allows for more flexibility in creating variations of existing styles without having to start from scratch.**
 
-# Hacks - Insert any screenshots, code segments, etc. that you need to
 
 ## Hacks Part 1
 
+**
 ![]({{site.baseurl}}/images/sass1.png "Pic 1")
 
 ![]({{site.baseurl}}/images/sass2.png "Pic 2")
