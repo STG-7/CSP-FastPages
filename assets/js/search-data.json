@@ -216,6 +216,22 @@
   
 
   
+      ,"page3": {
+          "title": "Game",
+          "content": "Guess the Number . Guess the Number . Try to guess the number between 1 and 100. . Submit . .",
+          "url": "https://stg-7.github.io/FastPages/game/",
+          "relUrl": "/game/",
+          "date": ""
+      }
+      
+  
+
+  
+
+  
+  
+
+  
 
   
   
@@ -226,23 +242,18 @@
   
 
   
-
-  
   
 
   
   
 
   
-  
-
-  
 
   
   
 
   
-      ,"page13": {
+      ,"page14": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://stg-7.github.io/FastPages/robots.txt",

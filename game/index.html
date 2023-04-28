@@ -4,21 +4,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>This page shows theme toggle | Shaurya’s FastPages</title>
+<title>Game | Shaurya’s FastPages</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="This page shows theme toggle" />
+<meta property="og:title" content="Game" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Hacks Part 2" />
-<meta property="og:description" content="Hacks Part 2" />
-<link rel="canonical" href="https://stg-7.github.io/FastPages/2023/03/22/theme-toggle.html" />
-<meta property="og:url" content="https://stg-7.github.io/FastPages/2023/03/22/theme-toggle.html" />
+<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<link rel="canonical" href="https://stg-7.github.io/FastPages/game/" />
+<meta property="og:url" content="https://stg-7.github.io/FastPages/game/" />
 <meta property="og:site_name" content="Shaurya’s FastPages" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-03-22T00:00:00-05:00" />
+<meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="This page shows theme toggle" />
+<meta property="twitter:title" content="Game" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-22T00:00:00-05:00","datePublished":"2023-03-22T00:00:00-05:00","description":"Hacks Part 2","headline":"This page shows theme toggle","mainEntityOfPage":{"@type":"WebPage","@id":"https://stg-7.github.io/FastPages/2023/03/22/theme-toggle.html"},"url":"https://stg-7.github.io/FastPages/2023/03/22/theme-toggle.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"Game","url":"https://stg-7.github.io/FastPages/game/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/FastPages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://stg-7.github.io/FastPages/feed.xml" title="Shaurya's FastPages" /><link rel="shortcut icon" type="image/x-icon" href="/FastPages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -70,64 +69,51 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+        <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">This page shows theme toggle</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-03-22T00:00:00-05:00" itemprop="datePublished">
-        Mar 22, 2023
-      </time>
-       • <span class="read-time" title="Estimated read time">
-    
-    
-      1 min read
-    
-</span></p>
+    <h1 class="post-title">Game</h1>
+  </header>
 
-    
+  <div class="post-content">
+    <html>
+<head>
+  <title>Guess the Number</title>
+</head>
+<body>
+  <h1>Guess the Number</h1>
+  <p>Try to guess the number between 1 and 100.</p>
+  <input type="text" id="guess" placeholder="Enter your guess" />
+  <button onclick="checkGuess()">Submit</button>
+  <p id="result"></p>
 
-    
-      </header>
+  <script>
+    // Generate a random number between 1 and 100
+    const randomNumber = Math.floor(Math.random() * 100) + 1;
+    let attempts = 0;
 
-  <div class="post-content e-content" itemprop="articleBody">
-    <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h2"><a href="#hacks-part-2">Hacks Part 2</a></li>
-</ul><body>
-<h2 id="hacks-part-2">
-<a class="anchor" href="#hacks-part-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks Part 2</h2>
+    function checkGuess() {
+      // Get the user's guess
+      const guess = parseInt(document.getElementById("guess").value);
 
+      // Increase the number of attempts
+      attempts++;
 
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/FastPages/assets/css/light-theme.css">
-    <link rel="stylesheet" href="/FastPages/assets/css/medium-theme.css">
-    <link rel="stylesheet" href="/FastPages/assets/css/dark-theme.css" id="theme-link">
-
-
-    <button id="theme-toggle">Toggle Theme</button>
-    <script>
-        const toggleButton = document.querySelector('#theme-toggle');
-        const themeLink = document.querySelector('#theme-link');
-        toggleButton.addEventListener('click', () => {
-            if (themeLink.getAttribute('href') === '/FastPages/assets/css/light-theme.css') {
-                themeLink.setAttribute('href', '/FastPages/assets/css/dark-theme.css');
-            } else if (themeLink.getAttribute('href') === '/FastPages/assets/css/dark-theme.css') {
-                themeLink.setAttribute('href', '/FastPages/assets/css/medium-theme.css');
-            } else {
-                themeLink.setAttribute('href', '/FastPages/assets/css/light-theme.css');
-            }
-        });
-    </script>
-
-
+      // Check if the guess is correct
+      if (guess === randomNumber) {
+        document.getElementById("result").innerHTML = `Congratulations! You guessed the number in ${attempts} attempts.`;
+      } else if (guess < randomNumber) {
+        document.getElementById("result").innerHTML = "Too low. Guess again.";
+      } else {
+        document.getElementById("result").innerHTML = "Too high. Guess again.";
+      }
+    }
+  </script>
 </body>
-  </div><!-- from https://github.com/utterance/utterances -->
-<script src="https://utteranc.es/client.js"
-        repo="STG-7/FastPages"
-        issue-term="title"
-        label="blogpost-comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script><a class="u-url" href="/FastPages/2023/03/22/theme-toggle.html" hidden></a>
+</html>
+
+  </div>
+
 </article>
 
       </div>
