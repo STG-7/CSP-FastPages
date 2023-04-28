@@ -1,5 +1,12 @@
 //Default Overrides For Styles In Minima 
 // If you wish to override any of this CSS, do so in _sass/minima/custom-styles.css
+@import "custom";
+
+header {
+  background-color: $primary-color;
+  font-family: $font-family;
+  color: white;
+}
 
 .post img {
         display: block;
