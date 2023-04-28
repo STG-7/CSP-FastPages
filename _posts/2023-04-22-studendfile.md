@@ -73,7 +73,13 @@ layout: notebook
 
 ## Hacks Part 1
 
+![]({{site.baseurl}}/images/picture12.png "Pic 1")
+
 ![]({{site.baseurl}}/images/picture12.png "Pic 2")
+
+![]({{site.baseurl}}/images/picture12.png "Pic 3")
+
+![]({{site.baseurl}}/images/picture12.png "Pic 4")
 
 
 
