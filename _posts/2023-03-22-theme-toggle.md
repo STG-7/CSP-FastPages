@@ -12,6 +12,7 @@ layout: notebook
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/FastPages/assets/css/light-theme.css">
+    <link rel="stylesheet" href="/FastPages/assets/css/medium-theme.css">
     <link rel="stylesheet" href="/FastPages/assets/css/dark-theme.css" id="theme-link">
 </head>
 <body>
@@ -22,6 +23,8 @@ layout: notebook
         toggleButton.addEventListener('click', () => {
             if (themeLink.getAttribute('href') === '/FastPages/assets/css/light-theme.css') {
                 themeLink.setAttribute('href', '/FastPages/assets/css/dark-theme.css');
+            } else if (themeLink.getAttribute('href') === '/FastPages/assets/css/dark-theme.css') {
+                themeLink.setAttribute('href', '/FastPages/assets/css/medium-theme.css');
             } else {
                 themeLink.setAttribute('href', '/FastPages/assets/css/light-theme.css');
             }
