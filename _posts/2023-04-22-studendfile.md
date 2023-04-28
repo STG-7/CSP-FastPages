@@ -70,7 +70,8 @@ layout: notebook
 
 ## Hacks Part 1
 
-**
+**I changed the header background color into orange and the font into verdana**
+
 ![]({{site.baseurl}}/images/sass1.png "Pic 1")
 
 ![]({{site.baseurl}}/images/sass2.png "Pic 2")
