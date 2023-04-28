@@ -1,7 +1,7 @@
 /* Define variables for colors */
 /* Use variables to style elements */
 body {
-  background-color: #f44336;
+  background-color: #36f456;
   color: #fff;
   font-family: sans-serif;
   display: flex;
@@ -12,7 +12,7 @@ body {
 }
 
 h1 {
-  color: #ffc107;
+  color: #ff07de;
   font-size: 3rem;
   text-align: center;
   margin-top: 2rem;
@@ -36,7 +36,7 @@ input[type=text] {
 }
 
 button {
-  background-color: #ffc107;
+  background-color: #36f456;
   color: #fff;
   border: none;
   border-radius: 0.25rem;
@@ -46,7 +46,7 @@ button {
 }
 
 button:hover {
-  background-color: #d39e00;
+  background-color: #36f456;
 }
 
 #result {
@@ -62,7 +62,7 @@ button:hover {
   left: 0;
   margin: 1rem;
   padding: 0.5rem 1rem;
-  background-color: var(#ffc107);
+  background-color: var(#36f456);
   color: #fff;
   border: none;
   border-radius: 0.25rem;
