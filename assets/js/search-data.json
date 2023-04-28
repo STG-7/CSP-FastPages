@@ -229,19 +229,14 @@
   
 
   
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
+      ,"page5": {
+          "title": "Number Guesser v3",
+          "content": "Guess the Number . Guess the Number . Try to guess the number between 1 and 100. . Submit . .",
+          "url": "https://stg-7.github.io/FastPages/_pages/numberguesser_v3.html",
+          "relUrl": "/_pages/numberguesser_v3.html",
+          "date": ""
+      }
+      
   
 
   
@@ -253,7 +248,23 @@
   
 
   
-      ,"page14": {
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+      ,"page15": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://stg-7.github.io/FastPages/robots.txt",
