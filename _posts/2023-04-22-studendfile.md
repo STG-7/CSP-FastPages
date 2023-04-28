@@ -1,10 +1,8 @@
 ---
-keywords: fastai
-title: WGET this file and complete fully and thoroughly in order to be graded
+title: Initial Questions and HACK 1
 toc: true
 comments: true
 badges: false
-nb_path: _notebooks/2023-04-22-studentfile.ipynb
 layout: notebook
 ---
 
