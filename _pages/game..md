@@ -8,6 +8,7 @@ permalink: /game/
 <html>
 <head>
   <title>Guess the Number</title>
+  <link rel="stylesheet" href="/FastPages/assets/css/game.css">
 </head>
 <body>
   <h1>Guess the Number</h1>
