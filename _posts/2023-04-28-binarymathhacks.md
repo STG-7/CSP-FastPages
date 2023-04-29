@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: Binary Math HACKS with Extra Credit
 categories: [markdown]
-title: Binary Math HACKS
+title: Binary Math HACKS (DID ALL THREE BUTTONS FOR EXTRA CREDIT)
 ---
 
 ```
