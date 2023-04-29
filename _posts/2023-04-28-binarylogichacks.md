@@ -18,4 +18,5 @@ Reflection:
 
 **By combining data tables and binary logic, complex data structures and algorithms can be created, which are used in various fields such as machine learning, artificial intelligence, and database management. It is crucial to understand these concepts to effectively analyze and manage data in the digital age.**
 
-# Coding HACKS (I DID ALL 3 FOR EXTRA CREDIT)
+
+
