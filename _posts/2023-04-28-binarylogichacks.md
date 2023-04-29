@@ -17,3 +17,5 @@ Reflection:
 **Binary logic, on the other hand, deals with the manipulation and analysis of two values, true and false, represented as 0 and 1, respectively. Boolean operators such as AND, OR, and NOT are used to manipulate these values and make logical decisions.**
 
 **By combining data tables and binary logic, complex data structures and algorithms can be created, which are used in various fields such as machine learning, artificial intelligence, and database management. It is crucial to understand these concepts to effectively analyze and manage data in the digital age.**
+
+# Coding HACKS (I DID ALL 3 FOR EXTRA CREDIT)
