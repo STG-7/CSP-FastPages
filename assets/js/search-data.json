@@ -58,7 +58,7 @@
     
         ,"post5": {
             "title": "Binary Logic Coding HACKS (I DID ALL 3 FOR EXTRA CREDIT)",
-            "content": "",
+            "content": "import csv with open(&#39;numbers.csv&#39;) as file: reader = csv.reader(file) data = [int(row[0]) for row in reader if row[0]] # calculate the mean of the data mean = sum(data) / len(data) # iterate over data again with stipulations count = 0 new_data = [] for num in data: if num % 2 == 1: continue elif num % 5 == 0: new_data.append(num * 2) else: new_data.append(num) count += 1 # calculate the mean of the new data new_mean = sum(new_data) / len(new_data) print(f&quot;Mean of original data: {mean}&quot;) print(f&quot;Number of values meeting first criteria: {count}&quot;) print(f&quot;Mean of new data: {new_mean}&quot;) . Mean of original data: 499.5 Number of values meeting first criteria: 500 Mean of new data: 598.0 .",
             "url": "https://stg-7.github.io/FastPages/2023/04/28/binarylogichackscont.html",
             "relUrl": "/2023/04/28/binarylogichackscont.html",
             "date": " • Apr 28, 2023"
