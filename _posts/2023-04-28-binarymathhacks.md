@@ -26,5 +26,17 @@ Based on what you find online, fill out the tables below for subtracting, multip
 
 
 ```
-Create buttons similar to the ones above that allow you to subtract binary numbers and returns the desired result in both binary and decima
+Create buttons similar to the ones above that allow you to subtract binary numbers and returns the desired result in both binary and decimal
+Create buttons similar to the ones above that allow you to multiply binary numbers and returns the desired result in both binary and decimal
+Create buttons similar to the ones above that allow you to divide binary numbers and returns the desired result in both binary and decimal
+
+If you create buttons for all three of these (or somehow find a way to combine them!), you can get an extra 0.1, and if you decide to customize the buttons to make them look more visually appealing (i.e. by using SASS), you could get extra credit.
+
+BONUS: Create a binary to decimal/decimal to binary converter in any language (not given in the lesson) a different way (0.9). Try not to use binary functions (like bin(x))!
 ```
+
+{% include binarymath1.html %}
+
+{% include binarymath2.html %}
+
+{% include binarymath3.html %}
