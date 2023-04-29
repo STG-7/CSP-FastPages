@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -96,7 +96,11 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
-</ul><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>How do you think we should find the difference of two binary numbers? The product? The quotient? What rules need to be followed for those operations? Look into all of this on the Internet and note down important information you find
+<li class="toc-entry toc-h1"><a href="#binary-subtraction-calculator">Binary Subtraction Calculator</a></li>
+<li class="toc-entry toc-h1"><a href="#binary-multiplication-calculator">Binary Multiplication Calculator</a></li>
+<li class="toc-entry toc-h1"><a href="#binary-division-calculator">Binary Division Calculator</a></li>
+</ul><body>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>How do you think we should find the difference of two binary numbers? The product? The quotient? What rules need to be followed for those operations? Look into all of this on the Internet and note down important information you find
 </code></pre></div></div>
 
 <p><strong>To find the difference of two binary numbers, we need to subtract each bit of the second number from the corresponding bit of the first number, starting from the least significant bit. If the result of the subtraction is negative, then we need to borrow 1 from the next bit. This process is continued until all the bits are subtracted.</strong></p>
@@ -112,9 +116,338 @@ window.onload = wrap_img;
 
 <p><img src="/FastPages/images/hack.png" alt="" title="Hack Pic"></p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Create buttons similar to the ones above that allow you to subtract binary numbers and returns the desired result in both binary and decima
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Create buttons similar to the ones above that allow you to subtract binary numbers and returns the desired result in both binary and decimal
+Create buttons similar to the ones above that allow you to multiply binary numbers and returns the desired result in both binary and decimal
+Create buttons similar to the ones above that allow you to divide binary numbers and returns the desired result in both binary and decimal
+
+If you create buttons for all three of these (or somehow find a way to combine them!), you can get an extra 0.1, and if you decide to customize the buttons to make them look more visually appealing (i.e. by using SASS), you could get extra credit.
+
+BONUS: Create a binary to decimal/decimal to binary converter in any language (not given in the lesson) a different way (0.9). Try not to use binary functions (like bin(x))!
 </code></pre></div></div>
 
+<p>&lt;!DOCTYPE html&gt;</p>
+
+  
+    <meta charset="UTF-8">
+    <title>Binary Subtraction Calculator</title>
+    <style>
+      body {
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+      }
+      
+      h1 {
+        font-size: 36px;
+        text-align: center;
+        margin-top: 50px;
+      }
+      
+      form {
+        margin: 50px auto;
+        max-width: 500px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+      }
+      
+      label {
+        font-size: 24px;
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"] {
+        font-size: 24px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      
+      input[type="button"] {
+        font-size: 24px;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+      }
+      
+      input[type="button"]:hover {
+        background-color: #32c422;
+      }
+      
+      p {
+        font-size: 24px;
+        margin-top: 20px;
+      }
+      
+      #binary_result {
+        font-weight: bold;
+      }
+      
+      #decimal_result {
+        color: #888;
+      }
+      
+    </style>
+  
+  
+  
+    <h1>
+<a class="anchor" href="#binary-subtraction-calculator" aria-hidden="true"><span class="octicon octicon-link"></span></a>Binary Subtraction Calculator</h1>
+    
+    <form>
+      <label for="binary1">Enter the first binary number:</label>
+      <input type="text" id="binary1" name="binary1" placeholder="e.g. 1010" required="">
+      
+      <label for="binary2">Enter the second binary number:</label>
+      <input type="text" id="binary2" name="binary2" placeholder="e.g. 1101" required="">
+      
+      <input type="button" value="Calculate Difference" onclick="binarySubtraction()">
+    </form>
+    
+    <p id="binary_result"></p>
+    <p id="decimal_result"></p>
+    
+    <script>
+      function binarySubtraction() {
+        // Get the values of the two input fields
+        var binary1 = document.getElementById("binary1").value;
+        var binary2 = document.getElementById("binary2").value;
+        // Convert the binary strings to decimal integers and subtract
+        var decimalDiff = parseInt(binary1, 2) - parseInt(binary2, 2);
+        // Convert the decimal difference back to a binary string and display it
+        var binaryDiff = decimalDiff.toString(2);
+        document.getElementById("binary_result").innerHTML = "The difference of " + binary1 + " and " + binary2 + " is: " + binaryDiff;
+        document.getElementById("decimal_result").innerHTML = "In decimal: " + decimalDiff;
+      }
+    </script>
+    
+  
+
+
+<p>&lt;!DOCTYPE html&gt;</p>
+
+  
+    <meta charset="UTF-8">
+    <title>Binary Multiplication Calculator</title>
+    <style>
+      body {
+        background-color: #F5F5F5;
+        font-family: Arial, sans-serif;
+      }
+      
+      h1 {
+        font-size: 36px;
+        text-align: center;
+        margin-top: 50px;
+      }
+      
+      form {
+        margin: 50px auto;
+        max-width: 500px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+      }
+      
+      label {
+        font-size: 24px;
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"] {
+        font-size: 24px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      
+      input[type="button"] {
+        font-size: 24px;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+      }
+      
+      input[type="button"]:hover {
+        background-color: #32C422;
+      }
+      
+      p {
+        font-size: 24px;
+        margin-top: 20px;
+      }
+      
+      #binary_result {
+        font-weight: bold;
+        color: #4CAF50;
+      }
+      
+      #decimal_result {
+        color: #888;
+      }
+      
+    </style>
+  
+  
+  
+    <h1>
+<a class="anchor" href="#binary-multiplication-calculator" aria-hidden="true"><span class="octicon octicon-link"></span></a>Binary Multiplication Calculator</h1>
+    
+    <form>
+      <label for="binary1">Enter the first binary number:</label>
+      <input type="text" id="binary1" name="binary1" placeholder="e.g. 1010" required="">
+      
+      <label for="binary2">Enter the second binary number:</label>
+      <input type="text" id="binary2" name="binary2" placeholder="e.g. 1101" required="">
+      
+      <input type="button" value="Calculate Product" onclick="binaryMultiplication()">
+    </form>
+    
+    <p id="binary_result"></p>
+    <p id="decimal_result"></p>
+    
+    <script>
+      function binaryMultiplication() {
+        // Get the values of the two input fields
+        var binary1 = document.getElementById("binary1").value;
+        var binary2 = document.getElementById("binary2").value;
+        // Convert the binary strings to decimal integers and multiply
+        var decimalProduct = parseInt(binary1, 2) * parseInt(binary2, 2);
+        // Convert the decimal product back to a binary string and display it
+        var binaryProduct = decimalProduct.toString(2);
+        document.getElementById("binary_result").innerHTML = "The product of " + binary1 + " and " + binary2 + " is: " + binaryProduct;
+        document.getElementById("decimal_result").innerHTML = "In decimal: " + decimalProduct;
+      }
+    </script>
+    
+  
+
+
+<p>&lt;!DOCTYPE html&gt;</p>
+
+  
+    <meta charset="UTF-8">
+    <title>Binary Division Calculator</title>
+    <style>
+      body {
+        background-color: #F5F5F5;
+        font-family: Arial, sans-serif;
+      }
+      
+      h1 {
+        font-size: 36px;
+        text-align: center;
+        margin-top: 50px;
+      }
+      
+      form {
+        margin: 50px auto;
+        max-width: 500px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+      }
+      
+      label {
+        font-size: 24px;
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"] {
+        font-size: 24px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      
+      input[type="button"] {
+        font-size: 24px;
+        padding: 10px 20px;
+        background-color: #FF8000;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+      }
+      
+      input[type="button"]:hover {
+        background-color: #FFA500;
+      }
+      
+      p {
+        font-size: 24px;
+        margin-top: 20px;
+      }
+      
+      #binary_result {
+        font-weight: bold;
+        color: #FF8000;
+      }
+      
+      #decimal_result {
+        color: #888;
+      }
+      
+    </style>
+  
+  
+  
+    <h1>
+<a class="anchor" href="#binary-division-calculator" aria-hidden="true"><span class="octicon octicon-link"></span></a>Binary Division Calculator</h1>
+    
+    <form>
+      <label for="dividend">Enter the dividend (binary number):</label>
+      <input type="text" id="dividend" name="dividend" placeholder="e.g. 1010" required="">
+      
+      <label for="divisor">Enter the divisor (binary number):</label>
+      <input type="text" id="divisor" name="divisor" placeholder="e.g. 1101" required="">
+      
+      <input type="button" value="Calculate Quotient" onclick="binaryDivision()">
+    </form>
+    
+    <p id="binary_result"></p>
+    <p id="decimal_result"></p>
+    
+    <script>
+      function binaryDivision() {
+        // Get the values of the two input fields
+        var dividend = document.getElementById("dividend").value;
+        var divisor = document.getElementById("divisor").value;
+        // Convert the binary strings to decimal integers and divide
+        var decimalQuotient = parseInt(dividend, 2) / parseInt(divisor, 2);
+        // Convert the decimal quotient back to a binary string and display it
+        var binaryQuotient = Math.floor(decimalQuotient).toString(2);
+        document.getElementById("binary_result").innerHTML = "The quotient of " + dividend + " divided by " + divisor + " is: " + binaryQuotient;
+        document.getElementById("decimal_result").innerHTML = "In decimal: " + decimalQuotient;
+      }
+    </script>
+    
+  
+
+</body>
   </div><a class="u-url" href="/FastPages/markdown/2023/04/28/binarymathhacks.html" hidden></a>
 </article>
 
