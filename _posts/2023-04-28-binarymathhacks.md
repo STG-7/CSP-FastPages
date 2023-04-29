@@ -1,7 +1,30 @@
 ---
 toc: true
 layout: post
-description: Binary Math HACKS 4/28
+description: Binary Math HACKS with Extra Credit
 categories: [markdown]
 title: Binary Math HACKS
 ---
+
+```
+How do you think we should find the difference of two binary numbers? The product? The quotient? What rules need to be followed for those operations? Look into all of this on the Internet and note down important information you find
+```
+
+**To find the difference of two binary numbers, we need to subtract each bit of the second number from the corresponding bit of the first number, starting from the least significant bit. If the result of the subtraction is negative, then we need to borrow 1 from the next bit. This process is continued until all the bits are subtracted.**
+
+**Multiplication of binary numbers involves multiplying each bit of one number with all the bits of the other number, similar to decimal multiplication. The results of these multiplications are then added up to give the final product. It is important to keep track of the carry bits while performing multiplication, similar to decimal multiplication.**
+
+**Division of binary numbers involves a similar process to decimal division. We need to repeatedly subtract the divisor from the dividend until we get a remainder that is less than the divisor. The quotient is the number of times we subtracted the divisor from the dividend. It is important to align the divisor and dividend properly and to keep track of the remainder and quotient while performing division.**
+
+**In all these operations, it is important to remember that binary numbers only have 2 digits (0 and 1), and any operation involving these numbers follows the rules of binary arithmetic, which can be different from the rules of decimal arithmetic.**
+
+```
+Based on what you find online, fill out the tables below for subtracting, multiplying, and dividing binary numbers (0.45):
+```
+
+![]({{site.baseurl}}/images/hack.png "Hack Pic")
+
+
+```
+Create buttons similar to the ones above that allow you to subtract binary numbers and returns the desired result in both binary and decima
+```
