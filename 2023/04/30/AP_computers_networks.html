@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      8 min read
+      9 min read
     
 </span></p>
 
@@ -186,13 +186,19 @@ window.onload = wrap_img;
   <li>Complete True of False Questions</li>
 </ul>
 
-<p><strong>TRUE: Open standards and protocols enable different manufacturers and developers to build hardware and software that can communicate with hardware and software on the rest of the internet.</strong>
-<strong>FALSE: IETF is a task force used to enforce laws to keep manufacturers out of the internet.</strong>
-<strong>FALSE: Routes are determined in advance and are not flexible.</strong>
-<strong>TRUE: A protocol is an agreed-upon set of rules that specify the behavior of a system.</strong>
-<strong>FALSE: UDP guarantees transfers and is faster.</strong>
-<strong>FALSE: The World Wide Web is the internet.</strong>
-<strong>TRUE: HTTP is a protocol used by the World Wide Web.</strong></p>
+<p><strong>TRUE: Open standards and protocols enable different manufacturers and developers to build hardware and software that can communicate with hardware and software on the rest of the internet.</strong></p>
+
+<p><strong>FALSE: IETF is a task force used to enforce laws to keep manufacturers out of the internet.</strong></p>
+
+<p><strong>FALSE: Routes are determined in advance and are not flexible.</strong></p>
+
+<p><strong>TRUE: A protocol is an agreed-upon set of rules that specify the behavior of a system.</strong></p>
+
+<p><strong>FALSE: UDP guarantees transfers and is faster.</strong></p>
+
+<p><strong>FALSE: The World Wide Web is the internet.</strong></p>
+
+<p><strong>TRUE: HTTP is a protocol used by the World Wide Web.</strong></p>
 
 <ul>
   <li>Essential Knowledge
@@ -263,13 +269,17 @@ window.onload = wrap_img;
 </blockquote>
 
 <ul>
-  <li>
-    <p>What is naturally Distributed in Frontend/Backend archeticture?</p>
-  </li>
-  <li>
-    <p>Analyze this command in Docker: <code class="language-plaintext highlighter-rouge">ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"</code>.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an <a href="https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7">article</a></p>
-  </li>
+  <li>What is naturally Distributed in Frontend/Backend archeticture?</li>
 </ul>
+
+<p><strong>In a frontend/backend architecture, the user interface is naturally distributed to the frontend layer while the data storage is handled by the backend layer. The frontend layer is responsible for presenting the user interface and handling user interactions, while the backend layer is responsible for storing and managing data. This division of responsibilities allows for more efficient development and easier maintenance of the overall system.</strong></p>
+
+<ul>
+  <li>Analyze this command in Docker: <code class="language-plaintext highlighter-rouge">ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"</code>.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an <a href="https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7">article</a>
+</li>
+</ul>
+
+<p><strong>The command ENV GUNICORN_CMD_ARGS=”–workers=1 –bind=0.0.0.0:8086” sets an environment variable named GUNICORN_CMD_ARGS with two options. The –workers=1 option specifies that only one worker process should be used, which means that parallel computing within the server is not being utilized. The –bind=0.0.0.0:8086 option specifies the IP address and port that Gunicorn should bind to.</strong></p>
 
 <blockquote>
   <p>Last week we discussed parallel computing on local machine.  There are many options.  Here is something to get parallel computing work with a tool called Ray.</p>
