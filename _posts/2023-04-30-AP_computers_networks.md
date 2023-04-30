@@ -31,7 +31,7 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 - Processes - **refers to a program or task that is being executed by a computer's operating system, which includes the instructions, data, and resources needed to complete the task.**
 - Ports - **a communication endpoint used to identify a specific process or application running on a computer or network and enable data exchange between different devices or software applications.**
 - Data File - **a computer file that contains information or data, such as text, images, audio, or video, which can be accessed and manipulated by software applications.**
-- Inspect Running Code - ** involves examining the live state and behavior of a running program or application in real-time to debug errors, optimize performance, or gather information about its execution.**
+- Inspect Running Code - **involves examining the live state and behavior of a running program or application in real-time to debug errors, optimize performance, or gather information about its execution.**
 - Inspect Variables - **can be used to programmatically access and retrieve information about variables, functions, classes, and other objects during runtime.**
 
 
