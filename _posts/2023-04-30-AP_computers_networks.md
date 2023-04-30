@@ -64,11 +64,17 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 - Complete True of False Questions
 
 **TRUE: Open standards and protocols enable different manufacturers and developers to build hardware and software that can communicate with hardware and software on the rest of the internet.**
+
 **FALSE: IETF is a task force used to enforce laws to keep manufacturers out of the internet.**
+
 **FALSE: Routes are determined in advance and are not flexible.**
+
 **TRUE: A protocol is an agreed-upon set of rules that specify the behavior of a system.**
+
 **FALSE: UDP guarantees transfers and is faster.**
+
 **FALSE: The World Wide Web is the internet.**
+
 **TRUE: HTTP is a protocol used by the World Wide Web.**
 
 - Essential Knowledge
@@ -129,9 +135,14 @@ The "network" layer is responsible for ***routing data packets between networks*
 ### Parallel and Distributed Computing
 > Review previous lecture on Parallel Computing and watch Daily vidoe 4.3.  Think of ways to make something in you team project to utilize Cores more effectively.  Here are some thoughts to add to your story of Computers and Networks...
 
-- What is naturally Distributed in Frontend/Backend archeticture?  
+- What is naturally Distributed in Frontend/Backend archeticture?
+
+**In a frontend/backend architecture, the user interface is naturally distributed to the frontend layer while the data storage is handled by the backend layer. The frontend layer is responsible for presenting the user interface and handling user interactions, while the backend layer is responsible for storing and managing data. This division of responsibilities allows for more efficient development and easier maintenance of the overall system.**
 
 - Analyze this command in Docker: ```ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"```.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an [article](https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7)
+
+
+**The command ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086" sets an environment variable named GUNICORN_CMD_ARGS with two options. The --workers=1 option specifies that only one worker process should be used, which means that parallel computing within the server is not being utilized. The --bind=0.0.0.0:8086 option specifies the IP address and port that Gunicorn should bind to.**
 
 
 > Last week we discussed parallel computing on local machine.  There are many options.  Here is something to get parallel computing work with a tool called Ray.
