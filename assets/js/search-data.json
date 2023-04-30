@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "2020 Practice Exam 1 MCQ Blog",
-            "content": "",
+            "content": "Overall Score 65/67 (97%) . from PIL import Image score = Image.open(&quot;../images/overallscore2020.png&quot;) display(score) . Questions I Got Wrong (#11, #67) . from PIL import Image wrong1 = Image.open(&quot;../images/test2wrong1.png&quot;) wrong2 = Image.open(&quot;../images/test2wrong2.png&quot;) display(wrong1) display(wrong2) . Correcting Wrong Answer - Question 11 . Why Option A) Is Incorrect: . 30.6 is incorrect because this is a better estimate for year 11. At year 10, the number of users (in millions) was 30.2, and the trend that I noticed is a 0.5 increase every year. 30.6 would be a great estimate for year 11, not year 12. . Why Option B) Is Correct: . The total number of registered users appears to be increasing by about 0.5 million each year, so in year 12, the number of users can be approximated at 31.2 million (30.2 + 0.5 + 0.5). . Correcting Wrong Answer - Question 67 . Why Option A) Is Incorrect: . 30.6 is incorrect because this is a better estimate for year 11. At year 10, the number of users (in millions) was 30.2, and the trend that I noticed is a 0.5 increase every year. 30.6 would be a great estimate for year 11, not year 12. . Why Option B) Is Correct: . The total number of registered users appears to be increasing by about 0.5 million each year, so in year 12, the number of users can be approximated at 31.2 million (30.2 + 0.5 + 0.5). .",
             "url": "https://stg-7.github.io/FastPages/2023/04/30/2020practicemcq.html",
             "relUrl": "/2023/04/30/2020practicemcq.html",
             "date": " • Apr 30, 2023"
