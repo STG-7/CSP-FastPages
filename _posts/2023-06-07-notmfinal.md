@@ -3,14 +3,18 @@ toc: true
 layout: post
 description: Night at the Musuem Reflection Blog (Extra Credit)
 categories: [markdown]
-title: Night At The Musuem Reflection Blog
+title: Night at the Musuem Reflection Blog
 ---
 
 # MCQ Reflection and Blog
 
-## Overall score
+Our N@TM project, SportsGames, was an exciting venture that allowed us to channel our passion for sports into a unique parody of ESPN. We aimed to create a platform that catered to fellow sports enthusiasts, integrating our love for soccer (UCL), basketball (NBA), and American football (NFL). One of the highlights of our project was the incorporation of intriguing statistics that would captivate the interest of other sports fans. We meticulously curated data on player performances, team rankings, and historical records, providing users with a comprehensive and engaging sports experience. Through SportsGames, we aimed to bring a fresh perspective to sports coverage, infusing humor and creativity to make it a standout destination for sports enthusiasts.
 
-![]({{site.baseurl}}/images/pic1.png "Overall Pic")
+
+
+
+
+![]({{site.baseurl}}/images/natmpic1.png "Picture 1")
 
  - I got questions 17,29, and 50 wrong.
 
