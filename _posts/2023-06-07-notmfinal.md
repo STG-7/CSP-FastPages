@@ -25,6 +25,8 @@ This application's major goals were to amuse users with games and provide them t
 
 It is a variation of GeoGuesser, with the exception that it displays images of locations all throughout the DNHS campus.
 
+Furthermore, the implementation of backend functionalities, such as data storage and retrieval, demonstrates their proficiency in handling complex data structures and algorithms. The efficient and scalable architecture they  employed ensures smooth gameplay and seamless transitions, highlighting their expertise in backend development.
+
 ![]({{site.baseurl}}/images/natmpic3.png "Picture 3")
 
 
