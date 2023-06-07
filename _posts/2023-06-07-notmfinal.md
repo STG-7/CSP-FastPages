@@ -25,7 +25,7 @@ This application's major goals were to amuse users with games and provide them t
 
 It is a variation of GeoGuesser, with the exception that it displays images of locations all throughout the DNHS campus.
 
-
+![]({{site.baseurl}}/images/natmpic3.png "Picture 3")
 
 
 
