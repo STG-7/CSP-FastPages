@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>JavaScript Tutorial | Shaurya’s FastPages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="JavaScript Tutorial" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Quick launch into Variables, Functions, Arrays, Classes, HTML." />
+<meta property="og:description" content="Quick launch into Variables, Functions, Arrays, Classes, HTML." />
+<link rel="canonical" href="https://stg-7.github.io/FastPages/2023/05/11/PBL-javascript_tutorial.html" />
+<meta property="og:url" content="https://stg-7.github.io/FastPages/2023/05/11/PBL-javascript_tutorial.html" />
+<meta property="og:site_name" content="Shaurya’s FastPages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-05-11T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="JavaScript Tutorial" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-05-11T00:00:00-05:00","datePublished":"2023-05-11T00:00:00-05:00","description":"Quick launch into Variables, Functions, Arrays, Classes, HTML.","headline":"JavaScript Tutorial","mainEntityOfPage":{"@type":"WebPage","@id":"https://stg-7.github.io/FastPages/2023/05/11/PBL-javascript_tutorial.html"},"url":"https://stg-7.github.io/FastPages/2023/05/11/PBL-javascript_tutorial.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/FastPages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://stg-7.github.io/FastPages/feed.xml" title="Shaurya's FastPages" /><link rel="shortcut icon" type="image/x-icon" href="/FastPages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/FastPages/">Shaurya&#39;s FastPages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/FastPages/about/">About Me</a><a class="page-link" href="/FastPages/categories/">Tags</a><a class="page-link" href="/FastPages/game/">Game</a><a class="page-link" href="/FastPages/_pages/numberguesser_v3.html">Number Guesser v3</a><a class="page-link" href="/FastPages/search/">Search</a><a class="page-link" href="/FastPages/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">JavaScript Tutorial</h1><p class="page-description">Quick launch into Variables, Functions, Arrays, Classes, HTML.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-05-11T00:00:00-05:00" itemprop="datePublished">
+        May 11, 2023
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      7 min read
+    
+</span></p>
+
+    
+
+    
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h5"><a href="#chat">chat </a></li>
+<li class="toc-entry toc-h5"><a href="#response-generated--by-ChatGPT-in-7-seconds-at-5/29/2023-8:00:00-PM">response generated  by ChatGPT in 7 seconds at 5/29/2023 8:00:00 PM </a></li>
+<li class="toc-entry toc-h2"><a href="#Hacks">Hacks </a></li>
+<li class="toc-entry toc-h2"><a href="#Output-Explored">Output Explored </a></li>
+<li class="toc-entry toc-h2"><a href="#Multiple-Outputs-using-One-Variable">Multiple Outputs using One Variable </a></li>
+<li class="toc-entry toc-h2"><a href="#Building-a-Person-Object-and-JSON">Building a Person Object and JSON </a></li>
+<li class="toc-entry toc-h2"><a href="#Project-Usage:-JavaScript-Sorting">Project Usage: JavaScript Sorting </a></li>
+<li class="toc-entry toc-h2"><a href="#CSA-Goals-&-Programming-Goals">CSA Goals &amp; Programming Goals </a></li>
+</ul><body>
+<!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2023-05-11-PBL-javascript_tutorial.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="chat">
+<a class="anchor" href="#chat" aria-hidden="true"><span class="octicon octicon-link"></span></a>chat<a class="anchor-link" href="#chat"> </a>
+</h5>
+<p>write a javascript program that says hi to me</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="response-generated--by-ChatGPT-in-7-seconds-at-5/29/2023-8:00:00-PM">
+<a class="anchor" href="#response-generated--by-ChatGPT-in-7-seconds-at-5/29/2023-8:00:00-PM" aria-hidden="true"><span class="octicon octicon-link"></span></a>response generated  by ChatGPT in 7 seconds at 5/29/2023 8:00:00 PM<a class="anchor-link" href="#response-generated--by-ChatGPT-in-7-seconds-at-5/29/2023-8:00:00-PM"> </a>
+</h5>
+<p>Certainly! Here's a simple JavaScript program that will greet you with "Hi!" when executed:</p>
+<div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Hi!"</span><span class="p">);</span>
+</pre></div>
+<p>You can run this code in any JavaScript environment, such as a web browser console or a Node.js environment, and it will output "Hi!" to the console.
+If you want to personalize the greeting by using your name, you can modify the code as follows:</p>
+<div class="highlight"><pre><span></span><span class="kr">const</span> <span class="nx">name</span> <span class="o">=</span> <span class="s2">"Your Name"</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Hi, "</span> <span class="o">+</span> <span class="nx">name</span> <span class="o">+</span> <span class="s2">"!"</span><span class="p">);</span>
+</pre></div>
+<p>Replace "Your Name" with your actual name, and when you run the program, it will greet you with "Hi, Your Name!" in the console.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hacks">
+<a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
+</h2>
+<blockquote>
+<p>One key to these hacks is to build confidence with me going into final grade, I would like to see each student adapt this frontend work in their final project.  Second key is the finished work can serve as review for the course, notes for the future in relationship to frontend.</p>
+<ul>
+<li>Adapt this tutorial to your own work</li>
+<li>Consider what you need to work on to be stronger developer</li>
+<li>Show something creative or unique, no cloning</li>
+<li>Be ready to talk to Teacher for 5 to 10 minutes. Individually!!!</li>
+<li>Show in Jupyter Notebook during discussion, show Theme and ChatGPT</li>
+<li>Have a runtime final in GithHub Pages (or Fastpage)</li>
+</ul>
+</blockquote>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%html</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+             <span class="p">{</span>
+                <span class="k">background-color</span><span class="p">:</span> <span class="mh">#42e3f5</span><span class="p">;</span>
+                <span class="k">padding</span><span class="p">:</span> <span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+                <span class="k">border</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#ccc</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"output"</span><span class="p">&gt;</span>
+            Testing.
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+
+    
+        <style>
+             {
+                background-color: #42e3f5;
+                padding: 8px;
+                border: 1px solid #ccc;
+            }
+        </style>
+    
+    
+        <div id="output">
+            Testing.
+        </div>
+    
+
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Output-Explored">
+<a class="anchor" href="#Output-Explored" aria-hidden="true"><span class="octicon octicon-link"></span></a>Output Explored<a class="anchor-link" href="#Output-Explored"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%js</span> // required to allow cell to be JavaScript enabled
+<span class="nx">element</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">"Hi there."</span><span class="p">);</span>
+
+<span class="c1">// Browser Console output; debugging or tracing</span>
+<span class="nx">element</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">" I am talking to Mr. Mortensen right now."</span><span class="p">);</span>
+<span class="nx">element</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">" I am taking AP CSA next year."</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+
+<div id="ecadfe06-61ab-4278-9fd6-a3727ecf5962"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#ecadfe06-61ab-4278-9fd6-a3727ecf5962');
+element.append("Hi there.");
+
+// Browser Console output; debugging or tracing
+element.append(" I am talking to Mr. Mortensen right now.");
+element.append(" I am taking AP CSA next year.");
+
+</script>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Multiple-Outputs-using-One-Variable">
+<a class="anchor" href="#Multiple-Outputs-using-One-Variable" aria-hidden="true"><span class="octicon octicon-link"></span></a>Multiple Outputs using One Variable<a class="anchor-link" href="#Multiple-Outputs-using-One-Variable"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%js</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Multiple Outputs Using One Variable"</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">msg</span> <span class="o">=</span> <span class="s2">"I am defining the variable msg here."</span><span class="p">;</span>
+
+<span class="c1">// Use msg to output code to Console and Jupyter Notebook</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">msg</span><span class="p">);</span>  <span class="c1">//right click browser select Inspect, then select Console to view</span>
+<span class="nx">element</span><span class="p">.</span><span class="nx">text</span><span class="p">(</span><span class="nx">msg</span><span class="p">);</span>
+<span class="c1">//alert(msg);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+
+<div id="f91db5cd-586f-4b09-9129-c250c236b0db"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#f91db5cd-586f-4b09-9129-c250c236b0db');
+console.log("Multiple Outputs Using One Variable");
+
+var msg = "I am defining the variable msg here.";
+
+// Use msg to output code to Console and Jupyter Notebook
+console.log(msg);  //right click browser select Inspect, then select Console to view
+element.text(msg);
+//alert(msg);
+
+</script>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Building-a-Person-Object-and-JSON">
+<a class="anchor" href="#Building-a-Person-Object-and-JSON" aria-hidden="true"><span class="octicon octicon-link"></span></a>Building a Person Object and JSON<a class="anchor-link" href="#Building-a-Person-Object-and-JSON"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%html</span>
+<span class="c">&lt;!-- load jQuery and tablesorter scripts --&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="c">&lt;!-- load jQuery and tablesorter scripts --&gt;</span>
+        <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">table</span> <span class="na">id</span><span class="o">=</span><span class="s">"jsonTable"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">thead</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>NBA PLAYER JSON Data<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">thead</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">td</span> <span class="na">id</span><span class="o">=</span><span class="s">"jsonText"</span><span class="p">&gt;</span>{
+                        "player": [
+                          {
+                            "name": "LeBron James",
+                            "team": "Los Angeles Lakers",
+                            "ppg": 28,
+                          },
+                          {
+                            "name": "Steph Curry",
+                            "team": "Golden State Warriors",
+                            "ppg": 30,
+                          },
+                        ]
+                      }
+                      <span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+<!-- load jQuery and tablesorter scripts -->
+
+    
+        <!-- load jQuery and tablesorter scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
+    
+
+    
+        <table id="jsonTable">
+            <thead>
+                <tr>
+                    <th>NBA PLAYER JSON Data</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="jsonText">{
+                        "player": [
+                          {
+                            "name": "LeBron James",
+                            "team": "Los Angeles Lakers",
+                            "ppg": 28,
+                          },
+                          {
+                            "name": "Steph Curry",
+                            "team": "Golden State Warriors",
+                            "ppg": 30,
+                          },
+                        ]
+                      }
+                      </td>
+                </tr>
+            </tbody>
+        </table>
+
+    
+
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%js</span>
+<span class="kr">class</span> <span class="nx">NBA</span> <span class="p">{</span>
+  <span class="nx">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">team</span><span class="p">,</span> <span class="nx">ppg</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">team</span> <span class="o">=</span> <span class="nx">team</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">ppg</span> <span class="o">=</span> <span class="nx">ppg</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="nx">getJSON</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="nx">name</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">,</span>
+      <span class="nx">team</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">team</span><span class="p">,</span>
+      <span class="nx">ppg</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">ppg</span><span class="p">,</span>
+     
+    <span class="p">};</span>
+    <span class="kr">const</span> <span class="nx">json</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span>
+    <span class="k">return</span> <span class="nx">json</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="nx">logIt</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+    <span class="nx">element</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">getJSON</span><span class="p">());</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kr">const</span> <span class="nx">NBAData</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">name</span><span class="o">:</span> <span class="s2">"LeBron James"</span><span class="p">,</span>
+  <span class="nx">team</span><span class="o">:</span> <span class="s2">"Los Angeles Lakers"</span><span class="p">,</span>
+  <span class="nx">ppg</span><span class="o">:</span> <span class="mf">28</span><span class="p">,</span>
+<span class="p">};</span>
+
+<span class="kr">const</span> <span class="nx">js</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">NBA</span><span class="p">(</span>
+  <span class="nx">NBAData</span><span class="p">.</span><span class="nx">name</span><span class="p">,</span>
+  <span class="nx">NBAData</span><span class="p">.</span><span class="nx">team</span><span class="p">,</span>
+  <span class="nx">NBAData</span><span class="p">.</span><span class="nx">ppg</span>
+<span class="p">);</span>
+
+<span class="nx">js</span><span class="p">.</span><span class="nx">logIt</span><span class="p">();</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+
+<div id="5ad8c3a3-8e43-4156-9a95-dfcf89474818"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#5ad8c3a3-8e43-4156-9a95-dfcf89474818');
+class NBA {
+  constructor(name, team, ppg) {
+    this.name = name;
+    this.team = team;
+    this.ppg = ppg;
+  }
+
+  getJSON() {
+    const obj = {
+      name: this.name,
+      team: this.team,
+      ppg: this.ppg,
+     
+    };
+    const json = JSON.stringify(obj);
+    return json;
+  }
+
+  logIt() {
+    console.info(this);
+    element.append(this.getJSON());
+  }
+}
+
+const NBAData = {
+  name: "LeBron James",
+  team: "Los Angeles Lakers",
+  ppg: 28,
+};
+
+const js = new NBA(
+  NBAData.name,
+  NBAData.team,
+  NBAData.ppg
+);
+
+js.logIt();
+
+</script>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Project-Usage:-JavaScript-Sorting">
+<a class="anchor" href="#Project-Usage:-JavaScript-Sorting" aria-hidden="true"><span class="octicon octicon-link"></span></a>Project Usage: JavaScript Sorting<a class="anchor-link" href="#Project-Usage:-JavaScript-Sorting"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%html</span>
+# defines the tableID that is going to be referred to in the future
+<span class="p">&lt;</span><span class="nt">table</span> <span class="na">id</span><span class="o">=</span><span class="s">"sportsTable"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">thead</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+        # these are the sortTable functions for each of the columns. the onclick allows for on click of the table header. 
+        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">onclick</span><span class="o">=</span><span class="s">"sortTable('assists per game')"</span><span class="p">&gt;</span>Assists Per Game<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">onclick</span><span class="o">=</span><span class="s">"sortTable('minutes per game')"</span><span class="p">&gt;</span>Minutes Per Game<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">onclick</span><span class="o">=</span><span class="s">"sortTable('blocks per game')"</span><span class="p">&gt;</span>Blocks Per Game<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">onclick</span><span class="o">=</span><span class="s">"sortTable('defensive rebounds')"</span><span class="p">&gt;</span>Defensive Rebounds<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">onclick</span><span class="o">=</span><span class="s">"sortTable('fg percent')"</span><span class="p">&gt;</span>FG Percent<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">onclick</span><span class="o">=</span><span class="s">"sortTable('ft percent')"</span><span class="p">&gt;</span>FT Percent<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">onclick</span><span class="o">=</span><span class="s">"sortTable('games played')"</span><span class="p">&gt;</span>Games Played<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">onclick</span><span class="o">=</span><span class="s">"sortTable('height (inches)')"</span><span class="p">&gt;</span>Height (inches)<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">onclick</span><span class="o">=</span><span class="s">"sortTable('name')"</span><span class="p">&gt;</span>Name<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">onclick</span><span class="o">=</span><span class="s">"sortTable('offensive rebounds')"</span><span class="p">&gt;</span>Offensive Rebounds<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">onclick</span><span class="o">=</span><span class="s">"sortTable('points per game')"</span><span class="p">&gt;</span>Points Per Game<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">onclick</span><span class="o">=</span><span class="s">"sortTable('steals per game')"</span><span class="p">&gt;</span>Steals Per Game<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">onclick</span><span class="o">=</span><span class="s">"sortTable('team')"</span><span class="p">&gt;</span>Team<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">onclick</span><span class="o">=</span><span class="s">"sortTable('three percent')"</span><span class="p">&gt;</span>Three Percent<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">th</span> <span class="na">onclick</span><span class="o">=</span><span class="s">"sortTable('weight (pounds)')"</span><span class="p">&gt;</span>Weight (pounds)<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">thead</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
+    # sample data following on frontend, just for demo.
+      <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>2<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>35<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>1<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>5<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>44<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>88<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>1421<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>81<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>LeBron James<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>6<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>28<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>1<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Los Angeles Lakers<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>24<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>250<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>3<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>32<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>2<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>6<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>55<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>92<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>1231<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>75<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Steph Curry<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>5<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>29<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>1<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Golden State Warriors<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>34<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>185<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+  
+  <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="c1">// sortTable function meant to sort based on each column header.</span>
+    <span class="kd">function</span> <span class="nx">getColumnIndex</span><span class="p">(</span><span class="nx">columnName</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// each column name is taken in columnName to get its index.</span>
+      <span class="kr">const</span> <span class="nx">table</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'sportsTable'</span><span class="p">);</span>
+      <span class="kr">const</span> <span class="nx">headerRow</span> <span class="o">=</span> <span class="nx">table</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">'thead'</span><span class="p">)[</span><span class="mf">0</span><span class="p">].</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">'tr'</span><span class="p">)[</span><span class="mf">0</span><span class="p">];</span>
+      <span class="c1">// contains the column headers, index 0</span>
+      <span class="kr">const</span> <span class="nx">headers</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">.</span><span class="nx">from</span><span class="p">(</span><span class="nx">headerRow</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">'th'</span><span class="p">));</span>
+      <span class="k">return</span> <span class="nx">headers</span><span class="p">.</span><span class="nx">findIndex</span><span class="p">(</span><span class="nx">header</span> <span class="p">=&gt;</span> <span class="nx">header</span><span class="p">.</span><span class="nx">innerText</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">()</span> <span class="o">===</span> <span class="nx">columnName</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">())</span> <span class="o">+</span> <span class="mf">1</span><span class="p">;</span>
+      <span class="c1">// converts column header names to lowercase to account for sortTable definitions</span>
+    <span class="p">}</span>
+    
+<span class="kd">function</span> <span class="nx">sortTable</span><span class="p">(</span><span class="nx">columnName</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kr">const</span> <span class="nx">table</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'sportsTable'</span><span class="p">);</span>
+  <span class="c1">// constant calls the tableID that was previously defined</span>
+  <span class="kr">const</span> <span class="nx">rows</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">.</span><span class="nx">from</span><span class="p">(</span><span class="nx">table</span><span class="p">.</span><span class="nx">tBodies</span><span class="p">[</span><span class="mf">0</span><span class="p">].</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">'tr'</span><span class="p">));</span>
+  <span class="kr">const</span> <span class="nx">headerRow</span> <span class="o">=</span> <span class="nx">table</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">'thead'</span><span class="p">)[</span><span class="mf">0</span><span class="p">].</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">'tr'</span><span class="p">)[</span><span class="mf">0</span><span class="p">];</span>
+  <span class="kr">const</span> <span class="nx">isAscending</span> <span class="o">=</span> <span class="o">!</span><span class="nx">headerRow</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">contains</span><span class="p">(</span><span class="s1">'asc'</span><span class="p">);</span>
+  <span class="c1">// this is a very important line - the asc class helps the function decide whether or not the column is going to be sorted in increasing order or decreasing order.</span>
+  
+  <span class="nx">rows</span><span class="p">.</span><span class="nx">sort</span><span class="p">((</span><span class="nx">rowA</span><span class="p">,</span> <span class="nx">rowB</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">cellA</span> <span class="o">=</span> <span class="nx">rowA</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="sb">`td:nth-child(</span><span class="si">${</span><span class="nx">getColumnIndex</span><span class="p">(</span><span class="nx">columnName</span><span class="p">)</span><span class="si">}</span><span class="sb">)`</span><span class="p">).</span><span class="nx">innerText</span><span class="p">;</span>
+    <span class="kd">let</span> <span class="nx">cellB</span> <span class="o">=</span> <span class="nx">rowB</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="sb">`td:nth-child(</span><span class="si">${</span><span class="nx">getColumnIndex</span><span class="p">(</span><span class="nx">columnName</span><span class="p">)</span><span class="si">}</span><span class="sb">)`</span><span class="p">).</span><span class="nx">innerText</span><span class="p">;</span>
+    <span class="c1">// the nth-child selector is different from normal JS arrays, these have an index starting at 1 rather than 0</span>
+    <span class="c1">// the rows are sorted based on the column. getColumnIndex is used to get the index of the column. </span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="nx">columnName</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">()</span> <span class="o">===</span> <span class="s1">'name'</span> <span class="o">||</span> <span class="nx">columnName</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">()</span> <span class="o">===</span> <span class="s1">'team'</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="nx">isAscending</span> <span class="o">?</span> <span class="nx">cellA</span><span class="p">.</span><span class="nx">localeCompare</span><span class="p">(</span><span class="nx">cellB</span><span class="p">,</span> <span class="kc">undefined</span><span class="p">,</span> <span class="p">{</span> <span class="nx">sensitivity</span><span class="o">:</span> <span class="s1">'base'</span> <span class="p">})</span> <span class="o">:</span> <span class="nx">cellB</span><span class="p">.</span><span class="nx">localeCompare</span><span class="p">(</span><span class="nx">cellA</span><span class="p">,</span> <span class="kc">undefined</span><span class="p">,</span> <span class="p">{</span> <span class="nx">sensitivity</span><span class="o">:</span> <span class="s1">'base'</span> <span class="p">});</span>
+    <span class="p">}</span>
+    
+    <span class="c1">// these were for special situations. the name and team columns were not sorting properly, so the localeCompare was used to sort the rows alphabetically. </span>
+
+    <span class="c1">// Convert the cell values to numbers for the "Games Played" column</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">columnName</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">()</span> <span class="o">===</span> <span class="s1">'games played'</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">cellA</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">cellA</span><span class="p">);</span>
+      <span class="nx">cellB</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">cellB</span><span class="p">);</span>
+    <span class="p">}</span>
+    
+    <span class="c1">// games played was not sorting for some odd reason, which is why this if statement was added.</span>
+    <span class="c1">// purpose is to parse the values as an integer and then sort numerically. </span>
+    
+    <span class="k">return</span> <span class="nx">isAscending</span> <span class="o">?</span> <span class="nx">cellA</span> <span class="o">-</span> <span class="nx">cellB</span> <span class="o">:</span> <span class="nx">cellB</span> <span class="o">-</span> <span class="nx">cellA</span><span class="p">;</span>
+  <span class="p">});</span>
+  
+  <span class="nx">rows</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">row</span> <span class="p">=&gt;</span> <span class="nx">table</span><span class="p">.</span><span class="nx">tBodies</span><span class="p">[</span><span class="mf">0</span><span class="p">].</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">row</span><span class="p">));</span>
+  <span class="nx">headerRow</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">toggle</span><span class="p">(</span><span class="s1">'asc'</span><span class="p">);</span>
+  <span class="c1">// this is meant for after sorting. after the sorting is done, the appendChild is meant to append these cell values back into the specified table.</span>
+<span class="p">}</span>
+
+  <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea ">
+# defines the tableID that is going to be referred to in the future
+<table id="sportsTable">
+    <thead>
+      <tr>
+        # these are the sortTable functions for each of the columns. the onclick allows for on click of the table header. 
+        <th onclick="sortTable('assists per game')">Assists Per Game</th>
+        <th onclick="sortTable('minutes per game')">Minutes Per Game</th>
+        <th onclick="sortTable('blocks per game')">Blocks Per Game</th>
+        <th onclick="sortTable('defensive rebounds')">Defensive Rebounds</th>
+        <th onclick="sortTable('fg percent')">FG Percent</th>
+        <th onclick="sortTable('ft percent')">FT Percent</th>
+        <th onclick="sortTable('games played')">Games Played</th>
+        <th onclick="sortTable('height (inches)')">Height (inches)</th>
+        <th onclick="sortTable('name')">Name</th>
+        <th onclick="sortTable('offensive rebounds')">Offensive Rebounds</th>
+        <th onclick="sortTable('points per game')">Points Per Game</th>
+        <th onclick="sortTable('steals per game')">Steals Per Game</th>
+        <th onclick="sortTable('team')">Team</th>
+        <th onclick="sortTable('three percent')">Three Percent</th>
+        <th onclick="sortTable('weight (pounds)')">Weight (pounds)</th>
+      </tr>
+    </thead>
+    <tbody>
+    # sample data following on frontend, just for demo.
+      <tr>
+        <td>2</td>
+        <td>35</td>
+        <td>1</td>
+        <td>5</td>
+        <td>44</td>
+        <td>88</td>
+        <td>1421</td>
+        <td>81</td>
+        <td>LeBron James</td>
+        <td>6</td>
+        <td>28</td>
+        <td>1</td>
+        <td>Los Angeles Lakers</td>
+        <td>24</td>
+        <td>250</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>32</td>
+        <td>2</td>
+        <td>6</td>
+        <td>55</td>
+        <td>92</td>
+        <td>1231</td>
+        <td>75</td>
+        <td>Steph Curry</td>
+        <td>5</td>
+        <td>29</td>
+        <td>1</td>
+        <td>Golden State Warriors</td>
+        <td>34</td>
+        <td>185</td>
+      </tr>
+  &lt;/table&gt;
+  
+  <script>
+    // sortTable function meant to sort based on each column header.
+    function getColumnIndex(columnName) {
+      // each column name is taken in columnName to get its index.
+      const table = document.getElementById('sportsTable');
+      const headerRow = table.getElementsByTagName('thead')[0].getElementsByTagName('tr')[0];
+      // contains the column headers, index 0
+      const headers = Array.from(headerRow.getElementsByTagName('th'));
+      return headers.findIndex(header => header.innerText.toLowerCase() === columnName.toLowerCase()) + 1;
+      // converts column header names to lowercase to account for sortTable definitions
+    }
+    
+function sortTable(columnName) {
+  const table = document.getElementById('sportsTable');
+  // constant calls the tableID that was previously defined
+  const rows = Array.from(table.tBodies[0].getElementsByTagName('tr'));
+  const headerRow = table.getElementsByTagName('thead')[0].getElementsByTagName('tr')[0];
+  const isAscending = !headerRow.classList.contains('asc');
+  // this is a very important line - the asc class helps the function decide whether or not the column is going to be sorted in increasing order or decreasing order.
+  
+  rows.sort((rowA, rowB) => {
+    let cellA = rowA.querySelector(`td:nth-child(${getColumnIndex(columnName)})`).innerText;
+    let cellB = rowB.querySelector(`td:nth-child(${getColumnIndex(columnName)})`).innerText;
+    // the nth-child selector is different from normal JS arrays, these have an index starting at 1 rather than 0
+    // the rows are sorted based on the column. getColumnIndex is used to get the index of the column. 
+
+    if (columnName.toLowerCase() === 'name' || columnName.toLowerCase() === 'team') {
+      return isAscending ? cellA.localeCompare(cellB, undefined, { sensitivity: 'base' }) : cellB.localeCompare(cellA, undefined, { sensitivity: 'base' });
+    }
+    
+    // these were for special situations. the name and team columns were not sorting properly, so the localeCompare was used to sort the rows alphabetically. 
+
+    // Convert the cell values to numbers for the "Games Played" column
+    if (columnName.toLowerCase() === 'games played') {
+      cellA = parseInt(cellA);
+      cellB = parseInt(cellB);
+    }
+    
+    // games played was not sorting for some odd reason, which is why this if statement was added.
+    // purpose is to parse the values as an integer and then sort numerically. 
+    
+    return isAscending ? cellA - cellB : cellB - cellA;
+  });
+  
+  rows.forEach(row => table.tBodies[0].appendChild(row));
+  headerRow.classList.toggle('asc');
+  // this is meant for after sorting. after the sorting is done, the appendChild is meant to append these cell values back into the specified table.
+}
+
+  </script>
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="CSA-Goals-&amp;-Programming-Goals">
+<a class="anchor" href="#CSA-Goals-&amp;-Programming-Goals" aria-hidden="true"><span class="octicon octicon-link"></span></a>CSA Goals &amp; Programming Goals<a class="anchor-link" href="#CSA-Goals-&amp;-Programming-Goals"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I think that next year in CSA, my main goal is going to be to approach assignments and projects with a much more <strong>open-ended approach</strong>.</p>
+<p>This year with CSP, I was working to solely fulfill the requirements, and I was not looking at the very vast variety of project types that I could take on.</p>
+<p>Next year with CSA, I hope to go much more in-depth into <strong>machine learning</strong>, and I want to approach assignments in a much more open-minded way.</p>
+<p>Next year, I also have to be much more <strong>independent</strong>, as this year, I had a lot of cleaning up after other people's messes in groups and such - I want to be more of a free programmer next year, while still being able to work and collaborate in teams.</p>
+<p>These are the projects that I want to work on over the summer and moving into next year:</p>
+<ol>
+<li>
+<p>Throughout the past 15 years, my mom has had <strong>serious thyroid issues</strong>. It has impacted her way of life drastically and has forced her out of living her life to its fullest. I would like to research and work on an ML related project which can recognize symptoms of these issues in order to give a <strong>preliminary diagnosis</strong> so that it can be treated earlier on.</p>
+</li>
+<li>
+<p>I am currently working on a Data Science course for getting the CompTIA Data+ Certification, a certification that most people with 18-24 months of experience in the data science industry take to gain more skills. I want to finish the course and pass the test to earn the certification so that I can develop a curriculum that can be used in an AP CSP classroom. We focused on DBs a lot during CSP this year, so I feel that the information I learn from this course can be a valuable addition to that focus area.</p>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+&lt;/div&gt;
+ 
+
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+  </div><a class="u-url" href="/FastPages/2023/05/11/PBL-javascript_tutorial.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/FastPages/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://stg-7.github.io/FastPages/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/FastPages/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
