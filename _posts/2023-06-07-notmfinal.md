@@ -30,5 +30,14 @@ Furthermore, the implementation of backend functionalities, such as data storage
 ![]({{site.baseurl}}/images/natmpic3.png "Picture 3")
 
 
+# Final NATM Reflection
+
+As I conclude this reflection, I carry with me a renewed sense of purpose and a deep appreciation for the wonders of computer science. The Night at the Museum experience has served as a reminder that computer science is not just about algorithms and code; it is a dynamic and ever-evolving field that touches every aspect of our lives.
+
+I am grateful for the opportunity to explore the interplay between technology and our human existence, and I am excited to embark on a future where computer science continues to push the boundaries of what is possible. The Night at the Museum has not only deepened my understanding of the field but has also sparked a lifelong passion to contribute to its advancement and impact.
+
+
+
+
 
 
